@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/pieces/base_piece.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/pieces/qajar_figure.gd" id="2"]
+
+[node name="King" type="Node3D"]
+script = ExtResource("1")
+piece_type = 6
+use_weapon = false
+attack_trail_start = 0.36
+attack_trail_hit = 0.66
+attack_trail_end = 1.07
+
+[node name="Model" type="Node3D" parent="."]
+script = ExtResource("2")
